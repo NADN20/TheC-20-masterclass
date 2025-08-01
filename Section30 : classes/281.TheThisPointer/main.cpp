@@ -41,11 +41,6 @@ void some_func(Dog dog_param) {
 }
 int main() {
 
-Dog my_dog("Gambel","Pidbull",5) ; 
 
-some_func(my_dog) ;
-std::cout<< "Done ! "<<std::endl; 
-
-return 0 ; 
-
-}
+    return 0 ;
+} 
