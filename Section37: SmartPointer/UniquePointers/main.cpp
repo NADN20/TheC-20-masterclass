@@ -29,10 +29,22 @@ delete p_dog1 ;
 delete p_int1 ;
 ----------------------------------------------------------------------------------------- */
 // Using unique_ptr : managed memory is owned by single pointer at any moment ! 
-
+{
 Dog *p_dog_2 = new Dog ("dog2") ; 
 
+std::unique_ptr<Dog> up_dog_{p_dog_2};
+std::unique_ptr<int> up_int_1{new int(200)}; // Fonda exemple 
+std::unique_ptr<Dog> up_dog_2{nullptr};
 
+
+up_dog_->Print_Name(); 
+*up_int_1=1996; 
+std::cout <<"Integer is : "<< *up_int_1 <<std::endl; 
+std::cout <<"Integer lives at adress  : "<< up_int_1.get() <<std::endl; 
+
+
+}
+std::cout<<"Hitting outside scope ! "<<std::endl ;
 
 
     return 0 ; 
