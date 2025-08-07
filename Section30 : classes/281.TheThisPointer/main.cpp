@@ -14,6 +14,16 @@ void set_dog_name (std::string_view name ) {
 this->name=name ; 
 
 }
+void set_dog_breed(std::string_view breed ) {
+this->breed=breed ; 
+
+} 
+void set_dog_age( int age ) {
+
+*(this->p_age)=age ;
+
+}
+
 
 void printf(){
 std::cout<<" Dog ( " << this << " ) : [ Name : " << name << " Breed : "<< breed<< " Age : " << *p_age <<" ] "<< std :: endl; 
@@ -55,7 +65,9 @@ int main() {
     dog1.printf()  ; 
      
     dog1.set_dog_name("Pumba") ;
-    dog1.printf()  ; 
+    dog1.printf()  ;  
+    dog1.set_dog_breed("chiwawa"); 
+    dog1.printf(); 
 
     std::cout<<"Done ! "<<std:: endl ; 
 
