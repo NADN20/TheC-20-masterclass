@@ -1,0 +1,50 @@
+#ifndef DOG_H
+#define DOG_H
+
+
+
+#include<string> 
+#include<iostream>
+
+
+class Dog {
+
+public : 
+Dog () = default ; 
+Dog(std::string_view param_name);
+Dog(std::string_view param_name ,std::string_view breed_param, int age_param);
+~Dog() ;
+
+//Setters
+void set_dog_name (std::string_view name ) {
+this->name=name ; 
+
+}
+void set_dog_breed(std::string_view breed ) {
+this->breed=breed ; 
+
+} 
+void set_dog_age( int age ) {
+
+*(this->p_age)=age ;
+
+}
+ 
+void Print_Name(){
+std::cout<<"Dog"<<std::endl;
+}
+
+
+void Print_All_Info(){
+std::cout<<"Dog ( " << this << " ) : [ Name : " << name << " Breed : "<< breed<< " Age : " << *p_age <<" ] "<< std :: endl; 
+}
+
+private : 
+std::string name ; 
+std:: string breed ; 
+int *p_age {nullptr}; 
+};
+
+
+
+#endif
