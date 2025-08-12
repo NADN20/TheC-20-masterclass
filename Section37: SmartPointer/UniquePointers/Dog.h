@@ -31,7 +31,7 @@ void set_dog_age( int age ) {
 }
  
 void Print_Name(){
-std::cout<<"Dog"<<std::endl;
+std::cout<<name<<std::endl;
 }
 
 

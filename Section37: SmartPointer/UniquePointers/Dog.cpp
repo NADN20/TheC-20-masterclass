@@ -12,11 +12,13 @@ Dog::Dog(std::string_view param_name ,std::string_view breed_param, int age_para
 }
 
 Dog::~Dog() {
-delete p_age ; 
+//delete p_age ; 
 std::cout<<"Dog  destructor called for : " << name <<" at "<< this << std::endl ; 
 }
 
-Dog::Dog(std::string_view param_name)
+Dog::Dog(std::string_view name)
 {
- this->name=name;   
+  this->name=name;  
+    std::cout<<"Dog  constructor called for : " << name <<" at "<< this << std::endl ; 
+
 }
