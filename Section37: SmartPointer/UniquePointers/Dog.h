@@ -15,7 +15,7 @@ Dog(std::string_view param_name);
 Dog(std::string_view param_name ,std::string_view breed_param, int age_param);
 ~Dog() ;
 
-//Setters
+//Setters :  
 void set_dog_name (std::string_view name ) {
 this->name=name ; 
 
@@ -29,6 +29,11 @@ void set_dog_age( int age ) {
 *(this->p_age)=age ;
 
 }
+
+//Getters : 
+std::string_view get_dog_name() ; 
+std::string_view get_dog_breed() ;
+int get_dog_age() ; 
  
 void Print_Name(){
 std::cout<<name<<std::endl;

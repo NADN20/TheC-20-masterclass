@@ -31,25 +31,20 @@ void Dog::set_dog_age( unsigned int age ) {
 this->age=age ;
 } 
 //Getters  :
-std::string_view Dog::get_dog_name() const{
+std::string_view Dog::get_dog_name(){
       return name ;
 }  
- std::string_view Dog::get_dog_breed() const {
+ std::string_view Dog::get_dog_breed(){
       return breed ;
 } 
-unsigned int Dog::get_dog_age() const  {
+unsigned int Dog::get_dog_age() {
     return age ;
 }
 
 //utilites functions : 
-void Dog:: Print_All_Info() const {
+void Dog:: Print_All_Info(){
 std::cout<<"Dog ( " << this << " ) : [ Name : " << name << " Breed : "<< breed<< " Age : " << age <<" ] "<< std :: endl; 
 }
-void Dog::Print_Name() const {
+void Dog::Print_Name(){
 std::cout<<name<<std::endl;
-} 
- void Dog::Function_taking_dog(std::string_view param_name) const {
- 
-param_name = name ; 
-     
- }
+}
