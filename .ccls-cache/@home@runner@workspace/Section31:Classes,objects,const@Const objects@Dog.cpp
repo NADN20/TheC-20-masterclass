@@ -1,4 +1,4 @@
-
+ 
 #include"Dog.h" 
 
 //Constructor 
@@ -48,3 +48,5 @@ std::cout<<"Dog ( " << this << " ) : [ Name : " << name << " Breed : "<< breed<<
 void Dog::Print_Name(){
 std::cout<<name<<std::endl;
 }
+
+

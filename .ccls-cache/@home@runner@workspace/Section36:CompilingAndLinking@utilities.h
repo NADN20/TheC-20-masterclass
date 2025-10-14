@@ -1,4 +1,4 @@
-
+// functions declaration for utilities.h
 
 
 double add(double a, double b)  ; 

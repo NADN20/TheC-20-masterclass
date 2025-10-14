@@ -1,0 +1,23 @@
+🧩 Exercise: “Friend and Classes”
+🎯 Objective
+
+The goal of this exercise is to practice the use of friendfunctions and classes in C++.
+
+You will create two classes:
+
+Point→ represent (x,y)
+
+Circle→ represents a circle with a center ( Point) and a radius ( radius)
+
+You must write a function
+
+bool is_inside(const Circle& c, const Point& p);
+
+
+that returns:
+
+true      if the point is inside or on the circle,
+
+false     if it's outside the circle.
+
+⚠️ The following mainprogram must compile without any errors and produce t
