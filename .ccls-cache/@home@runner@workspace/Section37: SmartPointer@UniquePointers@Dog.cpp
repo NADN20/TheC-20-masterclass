@@ -12,13 +12,25 @@ Dog::Dog(std::string_view param_name ,std::string_view breed_param, int age_para
 }
 
 Dog::~Dog() {
-//delete p_age ; 
+delete p_age ; 
 std::cout<<"Dog  destructor called for : " << name <<" at "<< this << std::endl ; 
 }
 
 Dog::Dog(std::string_view name)
 {
   this->name=name;  
-    std::cout<<"Dog  constructor called for : " << name <<" at "<< this << std::endl ; 
+    std::cout<<"Dog constructor called for : " << name <<" at "<< this << std::endl ; 
 
 }
+void Dog::Print_All_Info(){
+std::cout<<"Dog ( " << this << " ) : [ Name : " << name << " Breed : "<< breed<< " Age : " << *p_age <<" ] "<< std :: endl; 
+}
+
+void ::Dog::Print_Name()
+{
+    std::cout<<"Dog ( " << this << " ) : [ Name : " << name << " ] "<< std :: endl;
+} 
+
+
+
+

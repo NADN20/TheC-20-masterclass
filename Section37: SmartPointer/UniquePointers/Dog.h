@@ -35,17 +35,12 @@ std::string_view get_dog_name() ;
 std::string_view get_dog_breed() ;
 int get_dog_age() ; 
  
-void Print_Name(){
-std::cout<<name<<std::endl;
-}
+void Print_Name(); 
 
-
-void Print_All_Info(){
-std::cout<<"Dog ( " << this << " ) : [ Name : " << name << " Breed : "<< breed<< " Age : " << *p_age <<" ] "<< std :: endl; 
-}
+void Print_All_Info(); 
 
 private : 
-std::string name ; 
+std::string name ;  
 std:: string breed ; 
 int *p_age {nullptr}; 
 };
